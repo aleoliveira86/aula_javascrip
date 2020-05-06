@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <title> Minha Página</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <!-- function load - é quando a página é carregada pode colocar funçoes para fazer -->
+    <body onload="load()">
+        <button type="button" onclick="clicou()">Clique aqui</button>
+        <p id="agradecimento" onclick="redirecionar()"></p>
+        <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        <!-- this serve para informar que possui um elemento, com isso pode-se excluir o id. -->
+        <select onchange="funcaoChange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
+    </body>
+    
+
+</html>
